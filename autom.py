@@ -1,12 +1,14 @@
 from Auto import Auto
-import fajlbeolvas
 
-kocsi=fajlbeolvas.beolvas("auto.txt",[])
 
-def flotta():
+
+
+def flotta(kocsik):
     print("III/Flotta:")
     db=0
-    for i in range(0,(len(kocsi)),1):
-        if((kocsi[i].nev)):
+    for i in range(0,len(kocsik),1):
             db+=1
-    print(f"Autók száma: {db}")
+    return db
+
+def kor():
+      

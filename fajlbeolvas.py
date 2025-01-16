@@ -10,3 +10,4 @@ def beolvas(fajlnev,kocsi_lista=[]):
         kocsim=Auto(sor_lista[0],int(sor_lista[1]))
         kocsi_lista.append(kocsim)
     fajlom.close()
+    return kocsi_lista
